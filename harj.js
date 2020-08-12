@@ -24,7 +24,7 @@ console.log(summa2)
 console.log("Kohta F")
 let arvo1;
 arvo1 = 67
-let arvo2;
+let arvo2;  
 arvo2 = 32
 console.log(arvo1 + arvo2)
 let summa3;
