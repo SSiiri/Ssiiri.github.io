@@ -40,3 +40,30 @@ let summa6;
 summa6 = arvo1 / arvo2
 console.log("67 / 32 =" + summa6)
 
+let name = "Ismael";
+console.log( `hello ${1}` ); // ?
+console.log( `hello ${"name"}` ); // ?
+console.log( `hello ${name}` ); // ?
+
+
+"" + 1 + 0
+"" - 1 + 0
+true + false
+6 / "3"
+"2" * "3"
+4 + 5 + "px"
+"$" + 4 + 5
+"4" - 2
+"4px" - 2
+7 / 0
+" -9 " + 5
+" -9 " - 5
+null + 1
+undefined + 1
+
+console.log(4 + 5 + "px");
+let a = 1, n =1;
+let c = ++a; //?
+let d = b++; //?
+console.log(c);
+console.log(d);
