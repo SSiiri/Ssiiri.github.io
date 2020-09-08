@@ -1,0 +1,42 @@
+body{
+    background-image: url("../kuvat/tumma.jpg");
+    background-size: 100%;
+    background-repeat:repeat;
+    /*background-color: rgba(white);
+    background-image: url(../kuvat/polle.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    /*background-image: url("../kuvat/pysty.jpg"); 
+    background-repeat:repeat-y; /*toistuu kahteen suuntaan*/ 
+    /*background-image: url(../kuvat/taus.png);
+    background-repeat: repeat; */
+    color:rgb(74, 142, 206);
+}
+h1{
+    color:blue;
+    margin-top: 50px;
+    font-family: "Trebuchet MS", "Times New Roman";
+    font-size: 5em;
+}
+h2{
+    font-family: verdana, serif;
+    font-size: 2em;
+}
+#tarkein {
+    border: solid 1px #ffffff;
+    border-radius: 7px;
+    padding: 10px;
+    background-color: black
+}
+img{
+    width: 300px;
+    border: 3px blue solid;
+    padding: 10px;
+    margin: 100px;
+    outline: 3px dotted lightseagreen;
+}
+.kuvateksti {
+    color: turquoise;
+    font-style: italic
+}
