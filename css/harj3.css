@@ -1,5 +1,27 @@
-/body{
+body{
 margin-left: 40px;
-background-image: url(../kuvat/taustakuva.jpg);
+background-image: url("../kuvat/taustakuva.jpg");
+background-size: 100%;
 background-repeat: repeat;
+color: purple;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+h2{
+    font-family: Verdana, Tahoma, sans-serif;
+    color: black
+}
+p{
+    font-family: cursive;
+    color: purple
+}
+img{
+    width: 220px;
+    border: 2px blue solid;
+    padding: 20px;
+}
+#Internet{
+background-color: cornflowerblue;
 }
