@@ -3,20 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Demo 2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel ="stylesheet" type="text/css" href="./css/demo2.css">
 
 </head>
 
 <body>  
+
+    <button onclick="topFunction()" id="top" title="Go to top">Top</button>
+
  <ul>
     <li><a href="#kalatori">Kalatori</a></li>
     <li><a href="#Markkinat">Markkinat</a></li>
     <li><a href="#Hinnasto">Hinnasto</a></li>
-    <li><a href="#Ota yhteyttä">Ota yhteyttä</a></li>
+    <li><a href="#Yhteys">Ota yhteyttä</a></li>
     <li><a href="#Sijainti">Sijainti</a></li>
  </ul>
     
 
-
+<section id="Kalatori">
     <a name="Kalatori"><h1>Kalatori</h1></a>
     <img src="./kuvat/kala2.jpg" alt="Kala"><br>
     Jem Sahagunin kuva
@@ -25,7 +30,9 @@
     Se sijaitsee ihanteellisessa paikassa aivan vanhan Pirkkalankylän  keskustassa. 
     Torilla pidetään <mark>markkinapäiviä</mark> ja olemme saaneet torille vakituisen asiakaskunnan.
     Julkinen liikenne suosii toria, sijainti on nimen mukaisesti kalasataman vieressä ja linja-autopysäkki on 50 metrin päässä.</p>
+</section>
 
+<section id="Markkinat">
     <a name="Markkinat"><h3>Vuoden 2020 markkinat </h3></a>
          <ul>
             <li><del>Kevätmarkkinat lauantai 11.4. klo 7–16</del></li>
@@ -37,8 +44,9 @@
          <img src="./kuvat/mustekala.jpg" alt ="mustekala">
          <img src="./kuvat/pienikala.jpg" alt ="pieni kala">
          <img src="./kuvat/rapu.jpg" alt="rapu">
+</section>
 
-
+<section id="Hinnasto">
          <a name="Hinnasto"><h3>Hinnasto</h3></a>
 
          <img src="./kuvat/tori2.jpg" alt="Tori"><br>
@@ -126,8 +134,10 @@
                     <td>40</td>
                 </tr>
          </table>
-
-         <a name ="Ota yhteyttä"><h3>Ota yhteyttä</h3></a>
+</section>
+        
+<section id="Yhteys">
+         <a name ="Yhteys"><h3>Ota yhteyttä</h3></a>
 
          <form action="http://www.leeniemi.net/sasp20/lomakedemo4.php" method="post">
             Nimimerkki<br>
@@ -150,9 +160,33 @@
             <input type="submit" value="Lähetä"><br>
 
         </form>
+</section>
         
+<section id="Sijainti">
          <a name="Sijainti"><h3>Sijainti</h3></a>
          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1906.6422720834694!2d23.553976816221226!3d61.45316514598496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468ed9fa83d6429f%3A0xb142d41e406c097d!2sKierikantie%2018%2C%2033980%20Pirkkala!5e0!3m2!1sfi!2sfi!4v1598337152702!5m2!1sfi!2sfi" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-</body>
+ 
+
 <p>&copy;Siiri</p>
+</section>
+<script>
+var mybutton = document.getElementById("top");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
 </html>

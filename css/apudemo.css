@@ -1,0 +1,26 @@
+html
+body {
+    height: 100%;
+    margin: 0;
+}
+
+section {
+    height: 100vh;
+}
+
+#Kalatori {
+    background: lightblue;
+
+}
+#Markkinat {
+    background: lightgreen;
+}
+#Hinnasto {
+    background: lightsalmon;
+}
+#Yhteys {
+    background: rgb(228, 69, 69);
+}
+#Sijainti {
+    background: lightslategray;
+}
