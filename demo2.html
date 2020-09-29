@@ -12,14 +12,15 @@
 
     <button onclick="topFunction()" id="top" title="Go to top">Top</button>
 
- <ul>
-    <li><a href="#kalatori">Kalatori</a></li>
-    <li><a href="#Markkinat">Markkinat</a></li>
-    <li><a href="#Hinnasto">Hinnasto</a></li>
-    <li><a href="#Yhteys">Ota yhteyttä</a></li>
-    <li><a href="#Sijainti">Sijainti</a></li>
+    <header>
+ <ul class="navi">
+    <li class="navi"> <a href="kalatori"></a>Kalatori</a></li>
+    <li class="navi"><a href="#Markkinat">Markkinat</a></li>
+    <li class="navi"><a href="#Hinnasto">Hinnasto</a></li>
+    <li class="navi"><a href="#Yhteys">Ota yhteyttä</a></li>
+    <li class="navi"><a href="#Sijainti">Sijainti</a></li>
  </ul>
-    
+</header>
 
 <section id="Kalatori">
     <a name="Kalatori"><h1>Kalatori</h1></a>
@@ -41,15 +42,26 @@
             <li> Syysmarkkinat tiistai 13.10. klo 7–15</li>
             <li> Joulumarkkinat tiistai 15.12. klo 7–15 </li>
          </ul>
-         <img src="./kuvat/mustekala.jpg" alt ="mustekala">
-         <img src="./kuvat/pienikala.jpg" alt ="pieni kala">
-         <img src="./kuvat/rapu.jpg" alt="rapu">
+
+         <div id="kuvat">
+         <img src="./kuvat/mustekala.jpg" alt ="mustekala" class="round">
+         <img src="./kuvat/pienikala.jpg" alt ="pieni kala"class="round">
+         <img src="./kuvat/rapu.jpg" alt="rapu"class="round">
+        </div>
 </section>
 
 <section id="Hinnasto">
+    <div id="hintaalue">
          <a name="Hinnasto"><h3>Hinnasto</h3></a>
 
+         <div id="paikkakartta">
+         <p>
          <img src="./kuvat/tori2.jpg" alt="Tori"><br>
+         Paikkakartta
+        </p>
+         </div>
+
+         <div id="hintataulukko">
          <table>
              <tr>
                 <th>Tunnus</th>
@@ -134,6 +146,8 @@
                     <td>40</td>
                 </tr>
          </table>
+        </div>
+    </div>
 </section>
         
 <section id="Yhteys">
