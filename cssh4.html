@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas</title>
+    <h1>Canvas demo</h1>
+    <style>
+        Canvas{
+            background-color: white;
+        }
+        p {
+            font-size: 1.1em;
+            font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        }
+        h2 {
+            font-family: Verdana, Tahoma, sans-serif;
+            color: rgb(61, 57, 57);
+        }
+    </style>
+</head>
+<body style="background-color: dimgray;">
+    <h2>Tyhjä canvas</h2><br>
+    <canvas id="Canvas" width="400" height="200"style="border:1px solid #111111;"> </canvas> <br>
+
+    <h2>Canvas yhdellä viivalla</h2> <br>
+
+    <p>Ohut yksinkertainen viiva.</p>
+    <canvas id="Canvas1" width="400" height="200"style="border:3px solid #ff0000"> </canvas> <br>
+        <script>
+                var canva = document.getElementById("Canvas1");
+                var meow= canva.getContext("2d");
+                meow.moveTo(400, 100);
+                meow.lineTo(0,0);
+                meow.stroke();
+         </script>
+         <br>
+
+         <h2>Suomenlippu</h2> <br>
+         <p>2 paksumman viivan canvas, jonka viivoista on tehty siniset. </p>
+    <canvas id="Canvas2" width="400" height="200" style="border:6px solid #00ffff;" > </canvas>
+    
+        <script>
+                var canva = document.getElementById("Canvas2");
+                var ctx = canva.getContext("2d");
+                ctx.moveTo(400, 100);
+                ctx.lineTo(0,100);
+                ctx.stroke();
+                var ctc = canva.getContext("2d");
+                ctc.moveTo(125, 200);
+                ctc.lineTo(125,0);
+                ctc.strokeStyle = "#0000ff";
+                ctc.lineWidth = 40;
+                ctc.stroke();
+                </script>
+                <br>
+
+                <h2>Japanin lippu (ympyrä) </h2> <br>
+                <p>Ympyrä nimeltä "pallonen", joka on täytetty punaiseksi ja siirretty keskelle canvasta. </p>
+    <canvas id="Canvas3" width="400" height="200" style="border:6px solid #000000;"> </canvas>
+
+    <script>
+    var canva = document.getElementById("Canvas3");
+    var pallonen = canva.getContext("2d");
+    pallonen.beginPath();
+    pallonen.arc(200, 100, 80, 0, 2 * Math.PI);
+    pallonen.fillStyle="red";
+    pallonen.fill();
+    pallonen.strokeStyle = "red";
+    pallonen.stroke();
+    </script>
+    <br>
+
+
+<canvas id="Canvas4" width="400" height="200" style="border:6px solid #000000;"> </canvas>
+<script>
+        var canva = document.getElementById("Canvas4");
+        var fade = canva.getContext("2d");
+        var kuva = canva.createRadialGradient(75,50,5,90,60,100);
+            fade.addColorStop(0,"red");
+            fade.addColorStop(1,"white");
+
+        kuva.fillStyle = fade;
+        kuva.fillRect(10,10,150,80);
+    </script>
+</body>
+</html>
