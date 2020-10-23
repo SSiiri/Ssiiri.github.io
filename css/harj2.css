@@ -1,6 +1,11 @@
 body{
-    background-color: lightpink;
     margin-left: 2.0em;
+    background-image: url("../kuvat/oula.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 255, 255);
 }
 #top {
     display: none;
@@ -28,10 +33,16 @@ h2, h3{
     font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
     color: dodgerblue;
 }
+p, li, ul {
+    color: rgb(187, 187, 187);
+    font-size: 1.1em;
+}
+
 #teksti{
     height: 150px;
     width: 400px;
     font-size: 1.1em;
+    color: rgb(187, 187, 187);
 }
 ul.navi {
     width: fit-content;
@@ -52,6 +63,13 @@ li.navi {
     text-align: center;
     padding: 20px 25px;
     text-decoration: none;
+    
+  }
+  table{
+      border-collapse: collapse;
+  }
+  table, tr, th{
+      border: 2px solid slateblue;
   }
   #tietoja{
     display: flex;
