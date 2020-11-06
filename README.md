@@ -1,2 +1,2 @@
 # Ssiiri.github.io
-HTMP ja CSS
+HTML ja CSS
