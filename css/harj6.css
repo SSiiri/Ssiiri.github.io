@@ -4,39 +4,53 @@
     margin: 0;
     padding: 0;
 }
-body {
-    height: 100%;
-}
  
 div.container {
-    display: grid;
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     height: 100%;
-    grid-template-columns:[left] 10rem auto 10rem[right];
-    grid-template-rows: 5rem auto 5rem;
-    grid-template-areas:
-    "head head head"
-    "nav nav nav"
-    "article panright"
-    "foot foot foot"
+ 
 }
+ 
 header {
-    background: rgb(8, 0, 116);
-    grid-area: head;
+    height: 10%;
+    flex: 100%;
+    background: blue;
 }
+ 
 nav {
-    background-color: rgb(82, 93, 126);
-    grid-area: nav;
+    height: 5%;
+    flex: 100%;
+    background: teal;
+ 
 }
-footer {
-    background: rgb(62, 97, 255);
-    grid-area: foot;
-}
-.rightpanel {
-    background: rgb(0, 0, 0, 0.1);
-    grid-area: panright;
-}
+ 
 article {
-    background: seagreen;
-    grid-area: article;
+    height: 80%;
+    flex: 58.33333%;
+    background: thistle;
+ 
+}
+figure {
+    height: 80%;
+    flex: 25%;
+    background: violet;
+}
+ 
+aside {
+    height: 80%;
+    flex: 16.666666%;
+    background: tomato;
+}
+ 
+footer {
+    height: 5%;
+    flex: 100%;
+    background: turquoise;
+}
+ 
+@media screen and (max-width: 50rem)
+{
+ 
 }
