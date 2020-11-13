@@ -16,41 +16,80 @@ div.container {
 header {
     height: 10%;
     flex: 100%;
-    background: blue;
+    background: rgb(156, 69, 173);
 }
  
 nav {
     height: 5%;
     flex: 100%;
-    background: teal;
+    background: rgb(124, 57, 124);
  
 }
  
 article {
     height: 80%;
     flex: 58.33333%;
-    background: thistle;
+    background: rgb(126, 53, 160);
  
 }
 figure {
     height: 80%;
     flex: 25%;
-    background: violet;
+    background: rgb(198, 75, 223);
 }
- 
+
 aside {
     height: 80%;
     flex: 16.666666%;
-    background: tomato;
+    background: rgb(184, 116, 230);
 }
  
 footer {
     height: 5%;
     flex: 100%;
-    background: turquoise;
+    background: rgb(160, 61, 241);
 }
  
-@media screen and (max-width: 50rem)
-{
- 
+@media screen and (max-width: 768px)
+    {
+div.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-height: 100%;
+        
+}
+header {
+    height: 8%;
+    flex: 100%;
+    background: rgb(156, 69, 173);
+} 
+nav {
+    height: 4%;
+    flex: 100%;
+    background: rgb(124, 57, 124);
+        
+} 
+article {
+    height: 69%;
+    flex: 58.33333%;
+    background: rgb(126, 53, 160);
+        
+}
+figure {
+    height: 69%;
+    flex: 25%;
+    background: rgb(198, 75, 223);
+    display: none;
+}
+aside {
+    height: 15%;
+    flex: 100%;
+    background: rgb(184, 116, 230);
+}        
+footer {
+    height: 4%;
+    flex: 100%;
+    background: rgb(160, 61, 241);
+    }
 }
