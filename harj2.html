@@ -23,6 +23,7 @@
 
 
     <h1>Ravintola Oula</h1>
+      <a name = "kuvat"></a>
           <img src="./kuvat/ruoka1.jpg" alt="Ruokaa">
           <img src="./kuvat/ruoka2.jpg" alt="Ruokaa">
           <img src="./kuvat/ruoka3.jpg" alt="Ruokaa">
@@ -31,6 +32,8 @@
 
    <section id="Lounas">
    <h2>Lounaat</h2>
+   <div id="lounass">
+   
 <ul style="list-style-type:square">
  
 <li><strong>Maanantai:</strong> <br>Juusto-vihanneskeittoa ja kokin sämpylä
@@ -56,6 +59,7 @@
 <p>
  Lounaan hinta on 11&euro;, lounas sisältää ruokajuoman.
 </p>
+</div>
 
 <section id="Aikataulut">
    <a name="Aikataulut">Aikataulut</a>
@@ -79,6 +83,7 @@
     </table>
    </section>
 
+   <article id="poytavaraus" class="center">
    <section id="Varaus">
     <form action onsubmit="Varaus()">
 
@@ -110,25 +115,28 @@
       </script>
       <br>
 <br>
-<div id="tietoja">
+</article>
+
+<footer id="yhteystiedot">
 <section id="Tiedot">
     </form>
     <a name="Tiedot"><address> </a>
-      <div id="yhteystiedot"></div>
+      <div id="yhteystiedot">
         Ravintola Oula <br>
         Hallituskatu 12<br>
         33100 Tampere<br>
-        Email ravintola.oula@oulanet.fi<br>
+        Email ravintola.oula@oulanet.fi<br> <br>
         Puh. (016) 555 4755<br>
-        Fax (016) 555 4756<br>
+        Fax (016) 555 4756
         </address> 
-      </div>
+   </div>
       <div id="paikkakartta">
         <section id="Sijainti">
          <a name="Sijainti"><h3>Sijainti</h3></a>
-         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d951.995028806838!2d23.75785883059412!3d61.496514562803014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468ed8ae811d2891%3A0x6d190551fb145c03!2sHallituskatu%2012%2C%2033200%20Tampere!5e0!3m2!1sfi!2sfi!4v1601962062941!5m2!1sfi!2sfi" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3370.4189517826344!2d25.476051183802323!3d65.01521993499523!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x445bf46ef74f5a15!2sRavintola%20Kitchen%20%26%20Bar%20Oula!5e0!3m2!1sfi!2sfi!4v1606459395054!5m2!1sfi!2sfi" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
    </div>
+</footer>
          <br>
 <script>
 var mybutton = document.getElementById("top");      

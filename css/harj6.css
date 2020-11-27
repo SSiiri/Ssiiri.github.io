@@ -9,87 +9,92 @@ div.container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    height: 100%;
+    max-height: 100%;
  
 }
  
 header {
-    height: 10%;
+    height: 12%;
     flex: 100%;
-    background: rgb(156, 69, 173);
+    background: rgb(75, 167, 228);
 }
  
 nav {
     height: 5%;
     flex: 100%;
-    background: rgb(124, 57, 124);
+    background: rgb(17, 206, 206);
  
 }
  
 article {
-    height: 80%;
+    height: 78%;
     flex: 58.33333%;
-    background: rgb(126, 53, 160);
+    background: rgb(236, 143, 236);
  
 }
 figure {
-    height: 80%;
+    height: 78%;
     flex: 25%;
-    background: rgb(198, 75, 223);
+    background: rgb(214, 124, 255);
+}
+ 
+aside {
+    height: 78%;
+    flex: 16.666666%;
+    background: rgb(30, 141, 206);
+}
+ 
+footer {
+    height: 5%;
+    flex: 100%;
+    background: rgb(0, 170, 182);
 }
 
-aside {
-    height: 80%;
-    flex: 16.666666%;
-    background: rgb(184, 116, 230);
-}
- 
-footer {
-    height: 5%;
-    flex: 100%;
-    background: rgb(160, 61, 241);
-}
- 
-@media screen and (max-width: 768px)
-    {
-div.container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    max-height: 100%;
-        
-}
-header {
-    height: 8%;
-    flex: 100%;
-    background: rgb(156, 69, 173);
-} 
-nav {
-    height: 4%;
-    flex: 100%;
-    background: rgb(124, 57, 124);
-        
-} 
-article {
-    height: 69%;
-    flex: 58.33333%;
-    background: rgb(126, 53, 160);
-        
-}
-figure {
-    height: 69%;
-    flex: 25%;
-    background: rgb(198, 75, 223);
-    display: none;
-}
-aside {
-    height: 15%;
-    flex: 100%;
-    background: rgb(184, 116, 230);
-}        
-footer {
-    height: 4%;
-    flex: 100%;
-    background: rgb(160, 61, 241);
+@media screen and (max-width: 512px)
+{
+    div.container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        max-height: 100vh;
+    
+    }
+    
+    header {
+        height: 10%;
+        flex: 100%;
+        background: rgb(75, 167, 228);
+    }
+    
+    nav {
+        height: 5%;
+        flex: 100%;
+        background: rgb(17, 206, 206);
+    
+    }
+    
+    article {
+        height: 80%;
+        flex: 100%;
+        background: rgb(236, 143, 236);
+    }
+    figure {
+        height: 69%;
+        flex: 25%;
+        background: rgb(214, 124, 255);
+        display: none;
+    }
+    
+    aside {
+        height: 15%;
+        flex: 100%;
+        background: rgb(30, 141, 206);
+        display: none;
+    }
+    
+    footer {
+        height: 5%;
+        flex: 100%;
+        background: rgb(0, 170, 182);
     }
 }
